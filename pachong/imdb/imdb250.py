@@ -224,7 +224,6 @@ def store_actor_data_to_db(actor, movie):
         try:
             # 执行sql语句
             cursor.execute(sql)
-            # 执行sql语句
             db.commit()
             print("actor casted in movie data ADDED to DB table cast_in_movie!")
         except:
