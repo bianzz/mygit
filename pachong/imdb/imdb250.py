@@ -228,7 +228,6 @@ def store_actor_data_to_db(actor, movie):
             db.commit()
             print("actor casted in movie data ADDED to DB table cast_in_movie!")
         except:
-            # 发生错误时回滚
             db.rollback()
     else:
         print("This actor casted in movie data ALREADY EXISTED")
