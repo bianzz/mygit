@@ -13,7 +13,6 @@ def get_top250_movies_list():
         response = requests.get(url)
         if response.status_code == 200:
             html = response.text
-            print html
             soup = BeautifulSoup(html, 'lxml')
             movies = soup.select('tbody tr')
             for movie in movies:
